@@ -1,0 +1,92 @@
+/* বেসিক স্টাইল রিসেট */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* ব্যাকগ্রাউন্ড ইমেজ এবং ডার্ক ওভারলে */
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* স্ক্রল করার সময় ব্যাকগ্রাউন্ড স্থির থাকবে */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 680px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 40px);
+}
+
+/* প্রোফাইল সেকশন */
+.profile-section {
+    margin-bottom: 30px;
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* ছবি গোল করার জন্য */
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-name {
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.profile-bio {
+    font-size: 1em;
+    font-weight: 300;
+    color: #f0f0f0;
+}
+
+/* লিঙ্ক বাটন সেকশন */
+.links-section {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.link-button {
+    display: block;
+    background-color: rgba(20, 20, 20, 0.6);
+    color: white;
+    padding: 18px;
+    margin: 15px 0;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 400;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.link-button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: scale(1.02); /* বাটনে হোভার করলে সামান্য বড় হবে */
+}
+
+/* ফুটার */
+.footer {
+    margin-top: auto; /* ফুটারকে নিচে রাখার জন্য */
+    padding-top: 20px;
+    font-size: 0.9em;
+    color: #ccc;
+}
