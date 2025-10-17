@@ -12,7 +12,7 @@ body, html {
 
 body {
     /* ব্যাকগ্রাউন্ড ইমেজ এবং ডার্ক ওভারলে */
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('background.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://envs.sh/1cb.jpg/IMG20251017782.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* স্ক্রল করার সময় ব্যাকগ্রাউন্ড স্থির থাকবে */
